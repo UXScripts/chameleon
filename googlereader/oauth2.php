@@ -2,8 +2,8 @@
 
 if ($_GET['code']) {
 	$params = array();
-	$params['client_id'] = '200755636152.apps.googleusercontent.com';
-	$params['client_secret'] = 'uwswcT5DfQ8p_AWD1nA-CZV2';
+	$params['client_id'] = '<yourclientid>';
+	$params['client_secret'] = '<yourclientsecret>';
 	$params['code'] = $_GET['code'];
 	$params['grant_type'] = 'authorization_code';
 	$params['redirect_uri'] = 'http://thomasgallinari.com/chameleon/googlereader/oauth2.php';
@@ -23,8 +23,8 @@ if ($_GET['code']) {
 	header('Location: ' . $url);
 } else if ($_GET['refresh_token']) {
 	$params = array();
-	$params['client_id'] = '200755636152.apps.googleusercontent.com';
-	$params['client_secret'] = 'uwswcT5DfQ8p_AWD1nA-CZV2';
+	$params['client_id'] = '<yourclientid>';
+	$params['client_secret'] = '<yourclientsecret>';
 	$params['refresh_token'] = $_GET['refresh_token'];
 	$params['grant_type'] = 'refresh_token';
 
