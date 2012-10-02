@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<manifest xmlns="http://chameleonlauncher.com/widgets">
+	
+	<!-- About the widget -->
+	<widget>
+		<guid>com.thomasgallinari.chameleon.googlereader</guid> <!-- A unique id -->
+		<baseURL>http://thomasgallinari.com/chameleon/googlereader/</baseURL> <!-- your base url -->
+		<name>Google Reader</name> <!-- title that users will see as the name of the widget -->
+		<description>A widget for displaying your Google Reader feeds</description> <!-- a detailed description of the widget -->
+		<version>1.0.0</version> <!-- the version number of your widget -->
+	</widget>	
+	
+	
+	
+	<!-- Style info -->
+	<style>
+		<icons>
+			<large>images/icon.png</large> <!-- displayed on the title bar and in the widget list -->
+		</icons>
+		<color>#ff9600</color> <!-- The color applied to the widget's chrome -->
+		<showTitleBar>true</showTitleBar> <!-- hide the title bar if false -->
+		<showBackgroundShadow>true</showBackgroundShadow> <!-- hide theshadow behind the widget if false -->
+		<allowRefresh>true</allowRefresh> <!-- display a refresh button on the title bar -->
+		<allowConfigure>true</allowConfigure> <!-- display a refresh button on the title bar -->
+	</style>
+	
+	
+	
+	<!-- About who created the widget, and how to contact them -->
+	<author>
+		<name>Thomas Gallinari</name>
+		<website>http://thomasgallinari.com</website>
+		<email>thomas.gallinari@gmail.com</email>
+	</author>
+	
+
+	
+	<!-- 
+		- A list of all files required to run this widget offline
+		- Only files that a required for a first run offline are required.
+		- If a widget requires a network connection, only include the assets required to tell the user they need a connection.
+		- Assets not included will be cached on demand.
+	 -->
+	<resources>
+		<resource name='index.html' />
+		<resource name='settings.html' />
+		<resource name='js/index.main.js' />
+		<resource name='js/settings.main.js' />
+		<resource name='css/widget.css' />
+		<resource name='images/icon.png' />
+	</resources>
+
+</manifest>
+
