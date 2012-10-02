@@ -20,7 +20,7 @@ $(document).ready(function() {
 				}
 			},
 			callbackURL: 'http://thomasgallinari.com/chameleon/googlereader/oauth2.php',
-			consumerKey: '200755636152.apps.googleusercontent.com',
+			consumerKey: '<yourconsumerkey>',
 			onResult:function(success, data) {
 				if (success) {
 					var account = {};
